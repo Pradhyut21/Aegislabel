@@ -1,8 +1,8 @@
 <p align="center"><img src="docs/assets/brand.svg" alt="AegisLabel-FX — change-safe labeling, challenged by design" width="100%" /></p>
 
 <p align="center">
-  <a href="https://github.com/Pradhyut21/AegisLabel-FX/actions/workflows/quality.yml"><img alt="Quality checks" src="https://github.com/Pradhyut21/AegisLabel-FX/actions/workflows/quality.yml/badge.svg" /></a>
-  <a href="https://github.com/Pradhyut21/AegisLabel-FX/actions/workflows/codeql.yml"><img alt="CodeQL analysis" src="https://github.com/Pradhyut21/AegisLabel-FX/actions/workflows/codeql.yml/badge.svg" /></a>
+  <a href="https://github.com/Pradhyut21/Aegislabel/actions/workflows/quality.yml"><img alt="Quality checks" src="https://github.com/Pradhyut21/Aegislabel/actions/workflows/quality.yml/badge.svg" /></a>
+  <a href="https://github.com/Pradhyut21/Aegislabel/actions/workflows/codeql.yml"><img alt="CodeQL analysis" src="https://github.com/Pradhyut21/Aegislabel/actions/workflows/codeql.yml/badge.svg" /></a>
   <img alt="Data: synthetic only" src="https://img.shields.io/badge/data-synthetic_only-0D9488" />
   <img alt="AI: optional" src="https://img.shields.io/badge/AI-optional-10263F" />
 </p>
@@ -71,7 +71,7 @@ The [verification report](docs/VERIFICATION.md) records executed commands and en
 Python 3.12 and Node 22+ are recommended. Run from the project root:
 
 ```bash
-git clone https://github.com/Pradhyut21/AegisLabel-FX.git
+git clone https://github.com/Pradhyut21/Aegislabel.git AegisLabel-FX
 cd AegisLabel-FX
 python -m venv .venv
 source .venv/bin/activate
