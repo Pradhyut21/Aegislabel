@@ -43,7 +43,7 @@ Pygments==2.21.0
 PyMuPDF==1.25.5
 pyparsing==3.3.3
 pytest==9.0.3
-python-multipart==0.0.31
+python-multipart==0.0.33
 reportlab==4.4.0
 requests==2.34.2
 rich==15.0.0
