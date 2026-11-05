@@ -1,0 +1,59 @@
+WEBVTT
+
+NOTE Narration: locally synthesized Kokoro af_heart. Scene-level timing from measured audio durations.
+
+00:00:00.000 --> 00:00:07.744
+A tiny warning change can leave the wrong label in production. Watch Aegis
+Label FX catch the mistake before release.
+
+00:00:08.744 --> 00:00:18.941
+This working prototype connects fictional devices, approved source versions,
+and controlled artwork. The demonstration uses synthetic data and a bounded
+ruleset.
+
+00:00:19.946 --> 00:00:30.399
+An approved specification adds: inspect packaging before use. The impact
+engine identifies two dependent labels and leaves unrelated products
+unchanged.
+
+00:00:31.405 --> 00:00:40.194
+The studio generates revised artwork from the current source. I deliberately
+replace its warning with the older wording, creating a faulty revision.
+
+00:00:41.198 --> 00:00:53.059
+Validation blocks the draft. The expected warning, observed content, rule
+identifier, and source revision are inspectable. An unchanged warning can
+still violate a new requirement.
+
+00:00:54.065 --> 00:01:03.516
+Regenerating from the approved source corrects the artwork. Passing these
+checks makes it eligible for independent review. Passing never approves a
+release.
+
+00:01:04.517 --> 00:01:15.866
+A separate reviewer account inspects and approves the exact revision.
+Approval binds the artwork hash, source version, and ruleset. Later artwork
+changes require fresh approval.
+
+00:01:16.868 --> 00:01:26.468
+The release package contains actual SVG and PDF artwork, source evidence,
+validation findings, reviewer approval, and a release timestamp.
+
+00:01:27.470 --> 00:01:39.353
+Mutation Lab separately injects twenty four realistic faults into isolated
+copies. The detection results come from executed checks, including missing
+warnings and stale approvals.
+
+00:01:40.357 --> 00:01:50.042
+The audit chain links evidence, decisions and artwork hashes. Verification
+detects edits, but hash chaining alone does not provide immutable storage.
+
+00:01:51.045 --> 00:02:04.037
+For research context, two public FDA datasets are joined by explicit product
+code. Six devices produce eight category matches. Restricted terminology and
+contact details are excluded.
+
+00:02:05.037 --> 00:02:20.056
+The interface uses Meta originated React, with an implemented Meta Llama API
+adapter. This recording uses deterministic mode. Educational prototype. AI
+proposes. Rules decide. Humans approve.

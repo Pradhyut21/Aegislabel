@@ -1,0 +1,26 @@
+{
+  "source_commit": "08fce679cd3355b893648de5e54a764f2f24daa8",
+  "duration_seconds": 141.122,
+  "narration": "AI-generated Kokoro af_heart; not a human recording",
+  "mode": "deterministic",
+  "footage": "Real Playwright browser capture; scripted author/reviewer role demonstration in an isolated synthetic workspace",
+  "public_reference_data": "Separate openFDA UDI + classification sample; not release evidence or benchmark ground truth",
+  "files": {
+    "AegisLabel-FX-demo.mp4": {
+      "bytes": 15154423,
+      "sha256": "f2a93293bd2d420413de024cf0a8e112382c0500deb600ba3c1a7771506da356"
+    },
+    "AegisLabel-FX-poster.jpg": {
+      "bytes": 63992,
+      "sha256": "84f672b75896b3108931f6a39219571985282dd799fb6317c1f311e97bbb90da"
+    },
+    "AegisLabel-FX-transcript.vtt": {
+      "bytes": 2426,
+      "sha256": "1e06e28e20c285797f503717a72762170af49f0c727977253a5064f6dc240bbd"
+    },
+    "release-package.zip": {
+      "bytes": 6108,
+      "sha256": "db8be15c22c0ded69c8ab1b77516a688388d1ae6fb96fd4f8855355e5da91078"
+    }
+  }
+}

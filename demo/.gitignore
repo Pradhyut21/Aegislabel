@@ -8,3 +8,5 @@ renders/
 *.webm
 *.mp4
 *.jpg
+!media/AegisLabel-FX-demo.mp4
+!media/release-package.zip

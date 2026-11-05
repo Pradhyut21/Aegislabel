@@ -187,7 +187,7 @@ See [contribution guidance](CONTRIBUTING.md) and [security reporting](SECURITY.m
 
 [![Watch AegisLabel-FX: real workflow demo](docs/media/demo-poster.jpg)](https://github.com/Pradhyut21/Aegislabel/releases/tag/demo-v1.0.0)
 
-**[Watch/download the 1080p narrated demo](https://github.com/Pradhyut21/Aegislabel/releases/download/demo-v1.0.0/AegisLabel-FX-demo.mp4)** · [Transcript](demo/transcript.vtt) · [Demo assets and hash manifest](https://github.com/Pradhyut21/Aegislabel/releases/tag/demo-v1.0.0)
+**[Watch/download the 1080p narrated demo](https://github.com/Pradhyut21/Aegislabel/raw/refs/heads/main/demo/media/AegisLabel-FX-demo.mp4)** · [Transcript](demo/transcript.vtt) · [Demo assets and hash manifest](https://github.com/Pradhyut21/Aegislabel/releases/tag/demo-v1.0.0)
 
 2:21 of real application footage: missed-warning block → correction → independent reviewer role → release ZIP → executed fault injection. Voice is disclosed AI narration. The captured run uses deterministic mode; reviewer actions are a scripted prototype demonstration.
 

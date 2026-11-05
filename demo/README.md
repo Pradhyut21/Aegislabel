@@ -48,8 +48,12 @@ cd ../..
 python demo/finalize_video.py
 ```
 
-If Playwright's browser is unavailable, install the version matching the pinned Playwright package first. Renderer checks may take several minutes. Media assets, models, database, private runtime output and editor history are ignored by Git. All source scripts, narration, design, pinned media dependencies and composition HTML remain reviewable. The separate media toolchain pins `undici` 7.30.1 to remediate its upstream dependency advisory.
+If Playwright's browser is unavailable, install the version matching the pinned Playwright package first. Renderer checks may take several minutes. Working media assets, models, database, private runtime output and editor history are ignored by Git. The reviewed final MP4 and synthetic release ZIP are intentionally versioned under `demo/media/`, with exact manifest-hash and size checks in the repository scanner. Release-asset uploading was rejected by GitHub authentication, so these final exports use the authorized standard Git push. All source scripts, narration, design, pinned media dependencies and composition HTML remain reviewable. The separate media toolchain pins `undici` 7.30.1 to remediate its upstream dependency advisory.
 
 ## Submission limits
 
 The event's public page does not expose a video limit. This complete cut is **not claimed to meet an unverified submission duration**. The published November 4 deadline has passed. See [hackathon assessment](../docs/HACKATHON_ASSESSMENT.md) before attempting a submission.
+
+## Delivered files
+
+[MP4 demo](media/AegisLabel-FX-demo.mp4), [transcript](media/AegisLabel-FX-transcript.vtt), [hash manifest](media/demo-manifest.json), [measured audio verification](media/audio-verification.json), and [synthetic release ZIP](media/release-package.zip). The README poster is extracted from the video first frame.

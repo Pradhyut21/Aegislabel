@@ -1,8 +1,15 @@
 """Inspect exactly the files Git could publish; never inspect ignored user secrets."""
 
+import hashlib
+import json
 import re
 import subprocess
 from pathlib import Path
+
+REVIEWED_EXPORTS = {
+    "demo/media/AegisLabel-FX-demo.mp4": 20_000_000,
+    "demo/media/release-package.zip": 100_000,
+}
 
 PATTERNS = {
     "GitHub credential": re.compile(rb"\bgh[pousr]_[A-Za-z0-9]{30,}\b"),
@@ -50,12 +57,25 @@ def main():
         forbidden |= (
             relative.startswith("artifacts/") and relative != "artifacts/.gitkeep"
         )
+        reviewed_export = relative in REVIEWED_EXPORTS
+        if reviewed_export:
+            manifest = json.loads((root / "demo/media/demo-manifest.json").read_text())
+            expected = manifest["files"][path.name]
+            if (
+                path.stat().st_size > REVIEWED_EXPORTS[relative]
+                or hashlib.sha256(path.read_bytes()).hexdigest() != expected["sha256"]
+            ):
+                errors.append(
+                    f"Reviewed demo export failed size/hash verification: {relative}"
+                )
+            forbidden = False
         if forbidden:
             errors.append(f"Private/generated artifact selected: {relative}")
             continue
         data = path.read_bytes()
-        total += len(data)
-        if len(data) > 1_000_000:
+        if not reviewed_export:
+            total += len(data)
+        if len(data) > 1_000_000 and not reviewed_export:
             errors.append(f"Unexpected large file: {relative}")
         for title, pattern in PATTERNS.items():
             if pattern.search(data):
