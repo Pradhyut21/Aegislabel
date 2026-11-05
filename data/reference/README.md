@@ -20,4 +20,4 @@ openFDA generally makes its material available under CC0, with explicit third-pa
 
 ## Synthetic-data eligibility
 
-Synthetic fixtures are useful for reproducible fault injection and avoiding patient data. They do not automatically satisfy a hackathon's dataset or Meta-model requirements. The official hackathon rules/link have been requested and eligibility remains unverified. Report synthetic and public-reference experiments separately; never relabel synthetic detection rates as real-world clinical validation.
+Synthetic fixtures are useful for reproducible fault injection and avoiding patient data. They do not automatically satisfy a hackathon's dataset or Meta-model requirements. The supplied official event page does not expose a synthetic-data policy; detailed eligibility remains unverified. See [the hackathon assessment](../../docs/HACKATHON_ASSESSMENT.md), including the passed published deadline. Report synthetic and public-reference experiments separately; never relabel synthetic detection rates as real-world clinical validation.

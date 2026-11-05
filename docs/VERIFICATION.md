@@ -94,3 +94,5 @@ Executed locally on 2026-11-05:
 An initial browser-suite attempt failed because no server was listening on its configured port 8000. A fresh isolated server was then started for the rerun; the final rerun result is recorded below. Media render and new remote CI results must be checked separately from these completed local checks.
 
 Browser rerun on the fresh isolated server: **2 passed in 28.5 seconds**, including the complete warning failure/recovery/release journey and automated accessibility/mobile checks.
+
+Remote verification for `636a596726b5bdee59a406a9d5a30ff04c9d9f46`: [Quality 41959470473](https://github.com/Pradhyut21/Aegislabel/actions/runs/41959470473) **passed**, including SQLite/PostgreSQL backend tests, frontend checks, browser/accessibility tests, Docker smoke and the new demo-tooling install/audit. [CodeQL 41959470336](https://github.com/Pradhyut21/Aegislabel/actions/runs/41959470336) **passed** Python and JavaScript/TypeScript analysis.

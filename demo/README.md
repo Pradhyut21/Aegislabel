@@ -44,6 +44,8 @@ npm run check
 ../node_modules/.bin/hyperframes snapshot --at 3,47,74,95,116,132
 ../node_modules/.bin/hyperframes render --quality delivery --fps 30 --workers 1 --frames-cache-dir off --output ../../artifacts/demo/AegisLabel-FX-demo.mp4
 ../node_modules/.bin/hyperframes preview --stop
+cd ../..
+python demo/finalize_video.py
 ```
 
 If Playwright's browser is unavailable, install the version matching the pinned Playwright package first. Renderer checks may take several minutes. Media assets, models, database, private runtime output and editor history are ignored by Git. All source scripts, narration, design, pinned media dependencies and composition HTML remain reviewable. The separate media toolchain pins `undici` 7.30.1 to remediate its upstream dependency advisory.
