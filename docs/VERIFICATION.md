@@ -53,7 +53,7 @@ Genuine browser captures were used for layout review. They are verification arti
 ## Limits and unexecuted paths
 
 - Windows setup commands are documented but **not executed on Windows**; this environment has no D: drive.
-- The complete multi-stage Docker **application image was not built**. PostgreSQL and Compose configuration were exercised. After image pulls, approximately 1.5 GB remained; further image-layer builds were avoided. Use native mode here, or verify image builds on a machine with adequate storage.
+- The managed workspace did not build the full application image because storage was limited. The complete Docker image was subsequently built and smoke-tested successfully in GitHub Actions; see the remote verification below. Windows Docker Desktop remains untested.
 - Live Meta-compatible provider calls were **not executed**. Provider success, invalid output and bounded timeouts use mocks. No credentials or paid services were activated.
 - No broad language, clinical or regulatory validation, real GS1 allocation, OCR, live enterprise-system connectors, live regulatory monitoring, immutable external audit anchoring or production electronic signatures are claimed.
 - Chromium and automated accessibility checks were tested. Safari, Firefox, real assistive-technology sessions and all possible environments were not.
@@ -67,3 +67,13 @@ Final workspace smoke: 3 devices, 6 labels, 6 current synthetic seed approvals, 
 Security hardening was followed by **52 passing tests on each database**, including chunked bodies without Content-Length, read deadlines, busy-reader limits, trusted-host rejection, security headers on failures, logout revocation, workspace secret exclusion and bounded provider streaming. Frontend record models are explicitly typed; ESLint now rejects explicit `any`. Blocked artwork cannot be submitted through the interface; the API independently enforces the same release gates.
 
 The repository includes pinned GitHub Actions for quality checks, browser/accessibility tests, PostgreSQL integration, a container smoke test and CodeQL. These remote workflow results are only considered verified after their GitHub runs finish. README images are genuine captures from a separate synthetic preview database; neither that database nor its sessions is included in commits.
+
+
+## Verified GitHub publication
+
+The public source is hosted at [Pradhyut21/Aegislabel](https://github.com/Pradhyut21/Aegislabel). On commit `3b8c278cae5d028403c04b5bddb0ad068580a16f`:
+
+- [Quality run 41955816757](https://github.com/Pradhyut21/Aegislabel/actions/runs/41955816757) **passed**: backend tests on SQLite and PostgreSQL, migrations, mutation benchmark, repository-content scan, Ruff, frontend type/lint/format/unit/build checks, generated-contract drift checks, npm/Python dependency audits, the browser/accessibility journey, and the complete Docker build and container health smoke.
+- [CodeQL run 41955816798](https://github.com/Pradhyut21/Aegislabel/actions/runs/41955816798) **passed** analysis for Python and JavaScript/TypeScript. A successful analysis job is not a guarantee of zero security defects.
+
+The first container smoke attempt exposed a readiness race: Docker accepted the port before the application was ready, producing a connection reset. The health probe now retries bounded startup errors; the corrected run passed without weakening application tests. Nothing was deployed publicly. Repository description/topic updates were denied by the GitHub integration; the source, README and workflows were pushed successfully.
