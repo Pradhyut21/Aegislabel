@@ -15,7 +15,7 @@
     "api:types": "openapi-typescript ../docs/openapi.json -o src/generated/api.d.ts"
   },
   "dependencies": {
-    "lucide-react": "0.511.0",
+    "lucide-react": "1.66.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
