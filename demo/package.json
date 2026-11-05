@@ -1,0 +1,15 @@
+{
+  "name": "aegislabel-demo-production",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Optional BRAG-guided real-app demo capture and Hyperframes rendering tools",
+  "dependencies": {
+    "@playwright/test": "1.64.1",
+    "gsap": "3.15.0",
+    "hyperframes": "0.9.14"
+  },
+  "overrides": {
+    "undici": "7.30.1"
+  }
+}

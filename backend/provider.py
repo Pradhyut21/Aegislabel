@@ -18,9 +18,10 @@ class ProviderError(Exception):
 
 
 def enabled():
-    return os.getenv("AI_ENABLED", "false").lower() == "true" and bool(
-        os.getenv("AI_API_KEY")
+    key = {"meta": "LLAMA_API_KEY", "meta-model": "MODEL_API_KEY"}.get(
+        os.getenv("AI_PROVIDER"), "AI_API_KEY"
     )
+    return os.getenv("AI_ENABLED", "false").lower() == "true" and bool(os.getenv(key))
 
 
 def propose(fields, task="draft", text=None, client=None):
@@ -29,7 +30,15 @@ def propose(fields, task="draft", text=None, client=None):
         return dict(
             fields=fields, mode="deterministic", provider_error=None, usage=None
         )
-    endpoint = os.getenv("AI_BASE_URL", "").rstrip("/")
+    if os.getenv("AI_PROVIDER") == "meta":
+        from .meta_provider import propose_meta
+
+        return propose_meta(fields, task, text, http_client=client)
+    is_meta_model = os.getenv("AI_PROVIDER") == "meta-model"
+    endpoint = (
+        "https://api.meta.ai/v1" if is_meta_model else os.getenv("AI_BASE_URL", "")
+    ).rstrip("/")
+    key_name = "MODEL_API_KEY" if is_meta_model else "AI_API_KEY"
     if not endpoint.startswith("https://"):
         return dict(
             fields=fields,
@@ -37,7 +46,11 @@ def propose(fields, task="draft", text=None, client=None):
             provider_error="AI endpoint requires HTTPS",
             usage=None,
         )
-    model = os.getenv("AI_MODEL", "")
+    model = (
+        os.getenv("MODEL_API_MODEL", "muse-spark-1.3")
+        if is_meta_model
+        else os.getenv("AI_MODEL", "")
+    )
     if not model:
         return dict(
             fields=fields,
@@ -54,7 +67,7 @@ def propose(fields, task="draft", text=None, client=None):
                 with transport.stream(
                     "POST",
                     endpoint + "/chat/completions",
-                    headers={"Authorization": "Bearer " + os.environ["AI_API_KEY"]},
+                    headers={"Authorization": "Bearer " + os.environ[key_name]},
                     json={
                         "model": model,
                         "temperature": 0,
@@ -91,6 +104,8 @@ def propose(fields, task="draft", text=None, client=None):
                             raise ProviderError("Response exceeded limit")
                         chunks.append(chunk)
                     data = json.loads(b"".join(chunks))
+                if is_meta_model and data["choices"][0].get("finish_reason") != "stop":
+                    raise ProviderError("Incomplete Meta Model response")
                 p = Proposal.model_validate_json(
                     data["choices"][0]["message"]["content"]
                 )
@@ -109,6 +124,7 @@ def propose(fields, task="draft", text=None, client=None):
                     provider_error=None,
                     usage=data.get("usage"),
                     model=model,
+                    provider="meta-model-api" if is_meta_model else "openai-compatible",
                 )
             except (httpx.TimeoutException, httpx.ConnectError):
                 error = "Provider timed out or connection unavailable"

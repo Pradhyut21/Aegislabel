@@ -1,0 +1,9 @@
+udi_record_id,udi_public_version,brand_name,model_number,product_code,join_status,device_class,regulation_number
+82a71a59-166b-4aab-ac93-cd445d0738e9,2,FreedomEdgeTM,F10020,PKP,matched_category,2,880.5725
+82a71a59-166b-4aab-ac93-cd445d0738e9,2,FreedomEdgeTM,F10020,FPA,matched_category,2,880.5440
+82a71a59-166b-4aab-ac93-cd445d0738e9,2,FreedomEdgeTM,F10020,FRN,matched_category,2,880.5725
+9bb1cb6b-aa66-455e-8c71-33bdee24e619,6,Alcon,8065752213,HQC,matched_category,2,886.4670
+0a1bae9d-ae6b-48e3-ade6-e35b27c5d109,1,CARDINAL HEALTH,SAN23CCHMC,LRP,matched_category,1,878.4800
+aada53fb-4e82-493e-8fa5-6316ebc9841d,1,"Medline Industries, Inc.",CDS983481I,OEZ,matched_category,2,870.1200
+1b312b15-8cfd-45f4-b897-d74c7c954f77,1,HarmonyAIR,Monitor Carrier,FQO,matched_category,1,878.4960
+57e26c07-50cb-432b-9003-13b3bdb43a4d,5,RadiForce®,GS220,LLZ,matched_category,2,892.2050

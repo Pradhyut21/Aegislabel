@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1920,height=1080" />
+    <title>AegisLabel-FX — real workflow demo</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #10263f;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+      .clip {
+        position: absolute;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+      }
+      .brand {
+        position: absolute;
+        left: 64px;
+        top: 28px;
+        font-size: 29px;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+      .disclosure {
+        position: absolute;
+        right: 64px;
+        top: 34px;
+        font-size: 28px;
+        color: #c8d5e2;
+      }
+      .footage {
+        left: 48px;
+        top: 101px;
+        width: 1824px;
+        height: 900px;
+        object-fit: contain;
+        background: #f8fafc;
+        border: 1px solid #64748b;
+        border-radius: 12px;
+      }
+      .chapter {
+        left: 64px;
+        top: 1030px;
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .chapter span {
+        color: #5eead4;
+        margin-right: 24px;
+      }
+      .card {
+        left: 0;
+        top: 90px;
+        width: 1920px;
+        height: 920px;
+        padding: 92px 140px;
+        background: #10263f;
+      }
+      .eyebrow {
+        font-size: 28px;
+        letter-spacing: 3px;
+        color: #5eead4;
+        margin-bottom: 36px;
+      }
+      h1 {
+        font-size: 91px;
+        line-height: 1.1;
+        letter-spacing: -3px;
+        font-weight: 700;
+      }
+      em {
+        font-style: normal;
+        color: #5eead4;
+      }
+      .lead {
+        font-size: 31px;
+        color: #e2e8f0;
+        margin-top: 36px;
+        line-height: 1.4;
+      }
+      .detail {
+        font-size: 28px;
+        color: #cbd5e1;
+        margin-top: 28px;
+        line-height: 1.6;
+      }
+      .warning {
+        margin-top: 42px;
+        padding: 28px;
+        border-left: 5px solid #5eead4;
+        background: #19374d;
+        font-size: 32px;
+      }
+      .warning strong {
+        color: #5eead4;
+      }
+      .sources {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-top: 40px;
+      }
+      .sources div {
+        border: 1px solid #64748b;
+        border-radius: 12px;
+        padding: 26px 36px;
+        font-size: 30px;
+      }
+      .sources small {
+        display: block;
+        font-size: 28px;
+        margin-top: 12px;
+        color: #cbd5e1;
+      }
+      .sources span {
+        font-size: 46px;
+        color: #5eead4;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="141.056"
+      data-width="1920"
+      data-height="1080"
+    >
+      <section
+        id="card-intro"
+        data-hold
+        class="clip card"
+        data-start="0.000"
+        data-duration="8.744"
+      >
+        <p class="eyebrow">CHANGE-SAFE MEDICAL DEVICE LABELING</p>
+        <h1>A tiny change.<br />A critical consequence.</h1>
+        <p class="lead">
+          Watch a missed safety warning become a blocked release.
+        </p>
+        <div class="warning">
+          Do not reuse. <strong>Inspect packaging before use.</strong>
+        </div>
+      </section>
+      <div
+        id="chapter-intro"
+        class="clip chapter"
+        data-start="0.000"
+        data-duration="8.744"
+      >
+        <span>01 / 12</span> A tiny change. A critical consequence.
+      </div>
+      <audio
+        id="audio-intro"
+        data-start="0.000"
+        data-duration="7.744"
+        src="assets/intro.wav"
+      ></audio>
+      <video
+        id="video-overview"
+        class="clip footage"
+        data-start="8.744"
+        data-duration="11.202"
+        data-media-start="1.2"
+        src="assets/app-footage.webm"
+        muted
+        playsinline
+      ></video>
+      <div
+        id="chapter-overview"
+        class="clip chapter"
+        data-start="8.744"
+        data-duration="11.202"
+      >
+        <span>02 / 12</span> A working labeling assurance platform
+      </div>
+      <audio
+        id="audio-overview"
+        data-start="8.744"
+        data-duration="10.197"
+        src="assets/overview.wav"
+      ></audio>
+      <video
+        id="video-change"
+        class="clip footage"
+        data-start="19.946"
+        data-duration="11.459"
+        data-media-start="12.402"
+        src="assets/app-footage.webm"
+        muted
+        playsinline
+      ></video>
+      <div
+        id="chapter-change"
+        class="clip chapter"
+        data-start="19.946"
+        data-duration="11.459"
+      >
+        <span>03 / 12</span> 01 / Detect the source change
+      </div>
+      <audio
+        id="audio-change"
+        data-start="19.946"
+        data-duration="10.453"
+        src="assets/change.wav"
+      ></audio>
+      <video
+        id="video-draft"
+        class="clip footage"
+        data-start="31.405"
+        data-duration="9.793"
+        data-media-start="23.862"
+        src="assets/app-footage.webm"
+        muted
+        playsinline
+      ></video>
+      <div
+        id="chapter-draft"
+        class="clip chapter"
+        data-start="31.405"
+        data-duration="9.793"
+      >
+        <span>04 / 12</span> 02 / Generate, then challenge the draft
+      </div>
+      <audio
+        id="audio-draft"
+        data-start="31.405"
+        data-duration="8.789"
+        src="assets/draft.wav"
+      ></audio>
+      <video
+        id="video-blocked"
+        class="clip footage"
+        data-start="41.198"
+        data-duration="12.867"
+        data-media-start="33.655"
+        src="assets/app-footage.webm"
+        muted
+        playsinline
+      ></video>
+      <div
+        id="chapter-blocked"
+        class="clip chapter"
+        data-start="41.198"
+        data-duration="12.867"
+      >
+        <span>05 / 12</span> BLOCKED / Safety warning mismatch
+      </div>
+      <audio
+        id="audio-blocked"
+        data-start="41.198"
+        data-duration="11.861"
+        src="assets/blocked.wav"
+      ></audio>
+      <video
+        id="video-correct"
+        class="clip footage"
+        data-start="54.065"
+        data-duration="10.452"
+        data-media-start="46.523"
+        src="assets/app-footage.webm"
+        muted
+        playsinline
+      ></video>
+      <div
+        id="chapter-correct"
+        class="clip chapter"
+        data-start="54.065"
+        data-duration="10.452"
+      >
+        <span>06 / 12</span> 03 / Correct and validate
+      </div>
+      <audio
+        id="audio-correct"
+        data-start="54.065"
+        data-duration="9.451"
+        src="assets/correct.wav"
+      ></audio>
+      <video
+        id="video-review"
+        class="clip footage"
+        data-start="64.517"
+        data-duration="12.351"
+        data-media-start="56.975"
+        src="assets/app-footage.webm"
+        muted
+        playsinline
+      ></video>
+      <div
+        id="chapter-review"
+        class="clip chapter"
+        data-start="64.517"
+        data-duration="12.351"
+      >
+        <span>07 / 12</span> 04 / Independent reviewer approval
+      </div>
+      <audio
+        id="audio-review"
+        data-start="64.517"
+        data-duration="11.349"
+        src="assets/review.wav"
+      ></audio>
+      <video
+        id="video-release"
+        class="clip footage"
+        data-start="76.868"
+        data-duration="10.602"
+        data-media-start="69.326"
+        src="assets/app-footage.webm"
+        muted
+        playsinline
+      ></video>
+      <div
+        id="chapter-release"
+        class="clip chapter"
+        data-start="76.868"
+        data-duration="10.602"
+      >
+        <span>08 / 12</span> 05 / Download a traceable release
+      </div>
+      <audio
+        id="audio-release"
+        data-start="76.868"
+        data-duration="9.600"
+        src="assets/release.wav"
+      ></audio>
+      <video
+        id="video-mutations"
+        class="clip footage"
+        data-start="87.470"
+        data-duration="12.887"
+        data-media-start="79.928"
+        src="assets/app-footage.webm"
+        muted
+        playsinline
+      ></video>
+      <div
+        id="chapter-mutations"
+        class="clip chapter"
+        data-start="87.470"
+        data-duration="12.887"
+      >
+        <span>09 / 12</span> 06 / Test whether the controls work
+      </div>
+      <audio
+        id="audio-mutations"
+        data-start="87.470"
+        data-duration="11.883"
+        src="assets/mutations.wav"
+      ></audio>
+      <video
+        id="video-audit"
+        class="clip footage"
+        data-start="100.357"
+        data-duration="10.688"
+        data-media-start="92.815"
+        src="assets/app-footage.webm"
+        muted
+        playsinline
+      ></video>
+      <div
+        id="chapter-audit"
+        class="clip chapter"
+        data-start="100.357"
+        data-duration="10.688"
+      >
+        <span>10 / 12</span> Evidence, decisions and artwork hashes
+      </div>
+      <audio
+        id="audio-audit"
+        data-start="100.357"
+        data-duration="9.685"
+        src="assets/audit.wav"
+      ></audio>
+      <section
+        id="card-data"
+        data-hold
+        class="clip card"
+        data-start="111.045"
+        data-duration="13.992"
+      >
+        <p class="eyebrow">
+          PUBLIC REFERENCE RESEARCH · SEPARATE FROM THE TEST CORPUS
+        </p>
+        <h1>Two FDA sources.<br />Preserved provenance.</h1>
+        <div class="sources">
+          <div>Device UDI<small>Identifiers and product codes</small></div>
+          <span>→</span>
+          <div>
+            Device Classification<small>Device class and category</small>
+          </div>
+        </div>
+        <p class="lead">6 public devices · 8 product-code matches</p>
+        <p class="detail">
+          Explicit joins · source URLs · retrieval timestamps · raw response
+          hashes<br />GMDN terminology and contact details excluded
+        </p>
+      </section>
+      <div
+        id="chapter-data"
+        class="clip chapter"
+        data-start="111.045"
+        data-duration="13.992"
+      >
+        <span>11 / 12</span> Two public sources. Preserved provenance.
+      </div>
+      <audio
+        id="audio-data"
+        data-start="111.045"
+        data-duration="12.992"
+        src="assets/data.wav"
+      ></audio>
+      <section
+        id="card-outro"
+        data-hold
+        class="clip card"
+        data-start="125.037"
+        data-duration="16.019"
+      >
+        <p class="eyebrow">AEGISLABEL-FX · EDUCATIONAL RESEARCH PROTOTYPE</p>
+        <h1>AI proposes.<br />Rules decide.<br /><em>Humans approve.</em></h1>
+        <p class="lead">
+          React interface · optional server-side Meta API integration
+        </p>
+        <p class="detail">
+          Recorded in deterministic mode. No live Meta inference claimed.<br />Not
+          certified, production-ready, or endorsed by Meta or FDA.
+        </p>
+      </section>
+      <div
+        id="chapter-outro"
+        class="clip chapter"
+        data-start="125.037"
+        data-duration="16.019"
+      >
+        <span>12 / 12</span> AI proposes. Rules decide. Humans approve.
+      </div>
+      <audio
+        id="audio-outro"
+        data-start="125.037"
+        data-duration="15.019"
+        src="assets/outro.wav"
+      ></audio>
+      <div class="brand">AEGISLABEL-FX</div>
+      <div class="disclosure">
+        REAL APP CAPTURE · SYNTHETIC WORKSPACE · AI NARRATION
+      </div>
+    </main>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 141.056 });
+      window.__timelines.main = tl;
+    </script>
+  </body>
+</html>

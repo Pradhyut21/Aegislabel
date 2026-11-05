@@ -1,6 +1,6 @@
 # Contributing
 
-Use synthetic data exclusively. Keep deterministic safety rules separate from AI suggestions; passing validation must never automatically grant human approval.
+Use synthetic data exclusively in application workflows and evaluation. Public reference metadata may live in `data/reference/` only with documented source provenance, licensing and an explicit allowlist; never import it as approved labeling evidence. Keep deterministic safety rules separate from AI suggestions; passing validation must never automatically grant human approval.
 
 1. Install the locked Python dependencies and run `npm ci` in `frontend/`.
 2. Use a topic branch. Keep domain changes, interface changes and documentation reviewable.

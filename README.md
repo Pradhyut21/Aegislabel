@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://github.com/Pradhyut21/Aegislabel/actions/workflows/quality.yml"><img alt="Quality checks" src="https://github.com/Pradhyut21/Aegislabel/actions/workflows/quality.yml/badge.svg" /></a>
   <a href="https://github.com/Pradhyut21/Aegislabel/actions/workflows/codeql.yml"><img alt="CodeQL analysis" src="https://github.com/Pradhyut21/Aegislabel/actions/workflows/codeql.yml/badge.svg" /></a>
-  <img alt="Data: synthetic only" src="https://img.shields.io/badge/data-synthetic_only-0D9488" />
+  <img alt="Workspace: synthetic" src="https://img.shields.io/badge/workspace-synthetic-0D9488" />
   <img alt="AI: optional" src="https://img.shields.io/badge/AI-optional-10263F" />
 </p>
 
@@ -13,7 +13,7 @@ AegisLabel-FX connects a specification change to affected medical-device labels,
 
 **Start here:** [Run locally](#quick-start--native-no-docker-required) · [Execute the demo](#reproduce-the-critical-demo) · [Architecture](docs/ARCHITECTURE.md) · [Evaluation](docs/EVALUATION.md) · [Verified results](docs/VERIFICATION.md) · [Security](SECURITY.md)
 
-> **Educational research prototype.** Every device and document is synthetic. Checks cover a bounded configured ruleset, not complete regulatory requirements. This is not certified or validated for production. No public application deployment or paid AI access is required.
+> **Educational research prototype.** Every application device and document is synthetic. A separate public FDA reference bundle is documented below. Checks cover a bounded configured ruleset, not complete regulatory requirements. This is not certified or validated for production. No public application deployment or paid AI access is required.
 
 ## The moment that matters
 
@@ -182,3 +182,11 @@ For the exact verified Python dependency set, install `requirements.lock.txt` in
 ## Repository policies
 
 See [contribution guidance](CONTRIBUTING.md) and [security reporting](SECURITY.md). The code and synthetic fixtures are published for technical review; regulatory conformance and production suitability are not implied.
+
+## Recorded demo, Meta integration and public reference data
+
+- [Narrated real-app demo and reproducible capture/render commands](demo/README.md): BRAG-guided, locally synthesized voice, actual validation and approval screens.
+- [Meta technology provenance](docs/META_PROVENANCE.md): actual React usage, optional native Llama SDK and current Meta Model API modes; **no live inference claimed**. Meta did not author or endorse this project.
+- [Hackathon assessment](docs/HACKATHON_ASSESSMENT.md): the published November 4 deadline has passed; detailed eligibility, video duration and dataset policy remain unverified.
+- [Combined public FDA reference data](data/reference/README.md): six UDI records joined to classification categories, eight explicit product-code matches with provenance. Separate from synthetic approvals and evaluation; not clinical ground truth or training data.
+- [Third-party notices](THIRD_PARTY_NOTICES.md).

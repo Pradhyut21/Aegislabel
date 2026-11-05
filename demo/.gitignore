@@ -1,0 +1,10 @@
+node_modules/
+composition/assets/*
+!composition/assets/.gitkeep
+composition/.hyperframes/
+composition/.hyperframes-*/
+renders/
+*.wav
+*.webm
+*.mp4
+*.jpg

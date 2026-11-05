@@ -99,3 +99,15 @@ jobs:
           docker run -d --name aegis-ci -p 127.0.0.1:8000:8000 aegislabel-fx:ci
           trap 'docker logs aegis-ci; docker rm -f aegis-ci' EXIT
           curl --retry 20 --retry-all-errors --retry-delay 2 --connect-timeout 3 --max-time 5 --fail http://127.0.0.1:8000/api/v1/health
+
+  demo-tooling:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: demo/package-lock.json
+      - run: npm ci --ignore-scripts && npm audit --audit-level=moderate
+        working-directory: demo

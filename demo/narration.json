@@ -1,0 +1,62 @@
+[
+  {
+    "id": "intro",
+    "title": "A tiny change. A critical consequence.",
+    "text": "A tiny warning change can leave the wrong label in production. Watch Aegis Label FX catch the mistake before release."
+  },
+  {
+    "id": "overview",
+    "title": "A working labeling assurance platform",
+    "text": "This working prototype connects fictional devices, approved source versions, and controlled artwork. The demonstration uses synthetic data and a bounded ruleset."
+  },
+  {
+    "id": "change",
+    "title": "01 / Detect the source change",
+    "text": "An approved specification adds: inspect packaging before use. The impact engine identifies two dependent labels and leaves unrelated products unchanged."
+  },
+  {
+    "id": "draft",
+    "title": "02 / Generate, then challenge the draft",
+    "text": "The studio generates revised artwork from the current source. I deliberately replace its warning with the older wording, creating a faulty revision."
+  },
+  {
+    "id": "blocked",
+    "title": "BLOCKED / Safety warning mismatch",
+    "text": "Validation blocks the draft. The expected warning, observed content, rule identifier, and source revision are inspectable. An unchanged warning can still violate a new requirement."
+  },
+  {
+    "id": "correct",
+    "title": "03 / Correct and validate",
+    "text": "Regenerating from the approved source corrects the artwork. Passing these checks makes it eligible for independent review. Passing never approves a release."
+  },
+  {
+    "id": "review",
+    "title": "04 / Independent reviewer approval",
+    "text": "A separate reviewer account inspects and approves the exact revision. Approval binds the artwork hash, source version, and ruleset. Later artwork changes require fresh approval."
+  },
+  {
+    "id": "release",
+    "title": "05 / Download a traceable release",
+    "text": "The release package contains actual SVG and PDF artwork, source evidence, validation findings, reviewer approval, and a release timestamp."
+  },
+  {
+    "id": "mutations",
+    "title": "06 / Test whether the controls work",
+    "text": "Mutation Lab separately injects twenty four realistic faults into isolated copies. The detection results come from executed checks, including missing warnings and stale approvals."
+  },
+  {
+    "id": "audit",
+    "title": "Evidence, decisions and artwork hashes",
+    "text": "The audit chain links evidence, decisions and artwork hashes. Verification detects edits, but hash chaining alone does not provide immutable storage."
+  },
+  {
+    "id": "data",
+    "title": "Two public sources. Preserved provenance.",
+    "text": "For research context, two public FDA datasets are joined by explicit product code. Six devices produce eight category matches. Restricted terminology and contact details are excluded."
+  },
+  {
+    "id": "outro",
+    "title": "AI proposes. Rules decide. Humans approve.",
+    "text": "The interface uses Meta originated React, with an implemented Meta Llama API adapter. This recording uses deterministic mode. Educational prototype. AI proposes. Rules decide. Humans approve."
+  }
+]

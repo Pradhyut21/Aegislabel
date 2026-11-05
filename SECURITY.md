@@ -1,6 +1,6 @@
 # Security policy
 
-AegisLabel-FX is a localhost research prototype using synthetic data. Do not upload real patient information, proprietary specifications or production credentials. No release is regulatory certification or a legally compliant electronic signature.
+AegisLabel-FX is a localhost research prototype using synthetic application data. The separate allowlisted public FDA reference bundle is not imported into labeling workflows. Do not upload real patient information, proprietary specifications or production credentials. No release is regulatory certification or a legally compliant electronic signature.
 
 ## Implemented controls
 

@@ -77,3 +77,20 @@ The public source is hosted at [Pradhyut21/Aegislabel](https://github.com/Pradhy
 - [CodeQL run 41955816798](https://github.com/Pradhyut21/Aegislabel/actions/runs/41955816798) **passed** analysis for Python and JavaScript/TypeScript. A successful analysis job is not a guarantee of zero security defects.
 
 The first container smoke attempt exposed a readiness race: Docker accepted the port before the application was ready, producing a connection reset. The health probe now retries bounded startup errors; the corrected run passed without weakening application tests. Nothing was deployed publicly. Repository description/topic updates were denied by the GitHub integration; the source, README and workflows were pushed successfully.
+
+## Narrated demo, Meta adapters and public reference data update
+
+Executed locally on 2026-11-05:
+
+- `pytest -q`: **61 passed**, including current Meta Model API routing/truncation controls, native Llama SDK JSON-schema requests/fallback, and public-reference join/allowlist/missing/ambiguity/conflict checks. Provider tests use mocks; no live inference or paid access.
+- `ruff check backend tests scripts` and `ruff format`: passed.
+- Frontend ESLint, Vitest (**3 passed**) and production TypeScript/Vite build: passed.
+- `pip-audit -r requirements.lock.txt`: no known vulnerabilities found.
+- Optional demo `npm audit`: no known vulnerabilities after pinning the transitive `undici` to 7.30.1. This was a real finding and remediation, not a suppressed audit.
+- Real Playwright capture executed the complete warning/approval/release/mutation/audit flow in an isolated database, with result assertions. The demo's reviewer actions are scripted role demonstrations, not production human signatures.
+- Hyperframes composition check: passed; no layout, contrast, motion, craft or audio errors. Snapshots inspected at 3, 47, 74, 95, 116 and 132 seconds. Intentional still cards use `data-hold`; audio durations use actual measured WAV lengths.
+- Public openFDA fetch: **6 unique devices, 8 category joins, 0 unmatched/ambiguous/conflicting rows** in this small sample. These are dataset counts, not clinical or safety performance metrics.
+
+An initial browser-suite attempt failed because no server was listening on its configured port 8000. A fresh isolated server was then started for the rerun; the final rerun result is recorded below. Media render and new remote CI results must be checked separately from these completed local checks.
+
+Browser rerun on the fresh isolated server: **2 passed in 28.5 seconds**, including the complete warning failure/recovery/release journey and automated accessibility/mobile checks.

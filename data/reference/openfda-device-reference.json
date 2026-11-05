@@ -1,0 +1,467 @@
+{
+  "rows": [
+    {
+      "udi_record_id": "82a71a59-166b-4aab-ac93-cd445d0738e9",
+      "udi_public_version": "2",
+      "udi_public_version_date": "2018-03-29",
+      "brand_name": "FreedomEdgeTM",
+      "model_number": "F10020",
+      "primary_identifiers": [
+        {
+          "id": "00659443000018",
+          "issuing_agency": "GS1"
+        }
+      ],
+      "single_use": "false",
+      "sterile": "false",
+      "product_code": "PKP",
+      "classification": {
+        "product_code": "PKP",
+        "device_name": "Immunoglobulin G (Igg) Infusion System",
+        "device_class": "2",
+        "regulation_number": "880.5725",
+        "medical_specialty_description": "General Hospital"
+      },
+      "source_references": {
+        "udi": {
+          "url": "https://api.fda.gov/device/udi.json?search=device_description%3Ainfusion&limit=2",
+          "retrieved_at": "2026-11-05T02:54:21.711375+00:00",
+          "last_updated": "2026-10-01",
+          "response_sha256": "360edc4f642560121c26d25ef7d6593fa37eba59eb793d6b708669d71db7fa50",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        },
+        "classification": {
+          "url": "https://api.fda.gov/device/classification.json?search=product_code%3APKP&limit=2",
+          "retrieved_at": "2026-11-05T02:54:25.584668+00:00",
+          "last_updated": "2026-10-26",
+          "response_sha256": "b31306792dd17dfed948823a6230f8759090c1b9df55084967fbe9309dc495bd",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        }
+      },
+      "join_status": "matched_category",
+      "reference_conflicts": [],
+      "permitted_use": "Research reference only; not approved labeling evidence or clinical advice"
+    },
+    {
+      "udi_record_id": "82a71a59-166b-4aab-ac93-cd445d0738e9",
+      "udi_public_version": "2",
+      "udi_public_version_date": "2018-03-29",
+      "brand_name": "FreedomEdgeTM",
+      "model_number": "F10020",
+      "primary_identifiers": [
+        {
+          "id": "00659443000018",
+          "issuing_agency": "GS1"
+        }
+      ],
+      "single_use": "false",
+      "sterile": "false",
+      "product_code": "FPA",
+      "classification": {
+        "product_code": "FPA",
+        "device_name": "Set, Administration, Intravascular",
+        "device_class": "2",
+        "regulation_number": "880.5440",
+        "medical_specialty_description": "General Hospital"
+      },
+      "source_references": {
+        "udi": {
+          "url": "https://api.fda.gov/device/udi.json?search=device_description%3Ainfusion&limit=2",
+          "retrieved_at": "2026-11-05T02:54:21.711375+00:00",
+          "last_updated": "2026-10-01",
+          "response_sha256": "360edc4f642560121c26d25ef7d6593fa37eba59eb793d6b708669d71db7fa50",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        },
+        "classification": {
+          "url": "https://api.fda.gov/device/classification.json?search=product_code%3AFPA&limit=2",
+          "retrieved_at": "2026-11-05T02:54:23.161194+00:00",
+          "last_updated": "2026-10-26",
+          "response_sha256": "af4c59ae0edb5456c9eeb6bfbb45c1632212075406511fc61b524be2acc00b56",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        }
+      },
+      "join_status": "matched_category",
+      "reference_conflicts": [],
+      "permitted_use": "Research reference only; not approved labeling evidence or clinical advice"
+    },
+    {
+      "udi_record_id": "82a71a59-166b-4aab-ac93-cd445d0738e9",
+      "udi_public_version": "2",
+      "udi_public_version_date": "2018-03-29",
+      "brand_name": "FreedomEdgeTM",
+      "model_number": "F10020",
+      "primary_identifiers": [
+        {
+          "id": "00659443000018",
+          "issuing_agency": "GS1"
+        }
+      ],
+      "single_use": "false",
+      "sterile": "false",
+      "product_code": "FRN",
+      "classification": {
+        "product_code": "FRN",
+        "device_name": "Pump, Infusion",
+        "device_class": "2",
+        "regulation_number": "880.5725",
+        "medical_specialty_description": "General Hospital"
+      },
+      "source_references": {
+        "udi": {
+          "url": "https://api.fda.gov/device/udi.json?search=device_description%3Ainfusion&limit=2",
+          "retrieved_at": "2026-11-05T02:54:21.711375+00:00",
+          "last_updated": "2026-10-01",
+          "response_sha256": "360edc4f642560121c26d25ef7d6593fa37eba59eb793d6b708669d71db7fa50",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        },
+        "classification": {
+          "url": "https://api.fda.gov/device/classification.json?search=product_code%3AFRN&limit=2",
+          "retrieved_at": "2026-11-05T02:54:24.207631+00:00",
+          "last_updated": "2026-10-26",
+          "response_sha256": "89ca33aab932006bc7a6a7dc6d95cd51706c32051add08bf7978af7cae6ef84c",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        }
+      },
+      "join_status": "matched_category",
+      "reference_conflicts": [],
+      "permitted_use": "Research reference only; not approved labeling evidence or clinical advice"
+    },
+    {
+      "udi_record_id": "9bb1cb6b-aa66-455e-8c71-33bdee24e619",
+      "udi_public_version": "6",
+      "udi_public_version_date": "2024-03-22",
+      "brand_name": "Alcon",
+      "model_number": "8065752213",
+      "primary_identifiers": [
+        {
+          "id": "00380657522132",
+          "issuing_agency": "GS1"
+        }
+      ],
+      "single_use": "true",
+      "sterile": "true",
+      "product_code": "HQC",
+      "classification": {
+        "product_code": "HQC",
+        "device_name": "Unit, Phacofragmentation",
+        "device_class": "2",
+        "regulation_number": "886.4670",
+        "medical_specialty_description": "Ophthalmic"
+      },
+      "source_references": {
+        "udi": {
+          "url": "https://api.fda.gov/device/udi.json?search=device_description%3Ainfusion&limit=2",
+          "retrieved_at": "2026-11-05T02:54:21.711375+00:00",
+          "last_updated": "2026-10-01",
+          "response_sha256": "360edc4f642560121c26d25ef7d6593fa37eba59eb793d6b708669d71db7fa50",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        },
+        "classification": {
+          "url": "https://api.fda.gov/device/classification.json?search=product_code%3AHQC&limit=2",
+          "retrieved_at": "2026-11-05T02:54:24.575983+00:00",
+          "last_updated": "2026-10-26",
+          "response_sha256": "5c9babcb404a2e8ba43848e118016f246c705732e1d111b41209b719ad59b336",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        }
+      },
+      "join_status": "matched_category",
+      "reference_conflicts": [],
+      "permitted_use": "Research reference only; not approved labeling evidence or clinical advice"
+    },
+    {
+      "udi_record_id": "0a1bae9d-ae6b-48e3-ade6-e35b27c5d109",
+      "udi_public_version": "1",
+      "udi_public_version_date": "2023-07-19",
+      "brand_name": "CARDINAL HEALTH",
+      "model_number": "SAN23CCHMC",
+      "primary_identifiers": [
+        {
+          "id": "10197106301968",
+          "issuing_agency": "GS1"
+        }
+      ],
+      "single_use": "true",
+      "sterile": "true",
+      "product_code": "LRP",
+      "classification": {
+        "product_code": "LRP",
+        "device_name": "Tray, Surgical",
+        "device_class": "1",
+        "regulation_number": "878.4800",
+        "medical_specialty_description": "General, Plastic Surgery"
+      },
+      "source_references": {
+        "udi": {
+          "url": "https://api.fda.gov/device/udi.json?search=device_description%3Acardiac&limit=2",
+          "retrieved_at": "2026-11-05T02:54:22.307439+00:00",
+          "last_updated": "2026-10-01",
+          "response_sha256": "6ce7a06684003871ce9f5ef9b313e16eeb18d0ac6aba64b8f9598354bd0cbf5f",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        },
+        "classification": {
+          "url": "https://api.fda.gov/device/classification.json?search=product_code%3ALRP&limit=2",
+          "retrieved_at": "2026-11-05T02:54:25.057000+00:00",
+          "last_updated": "2026-10-26",
+          "response_sha256": "2b9b6ca7ccaf527f6148824cfe274498fca8385df4666f80e4f8544ef8d7352a",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        }
+      },
+      "join_status": "matched_category",
+      "reference_conflicts": [],
+      "permitted_use": "Research reference only; not approved labeling evidence or clinical advice"
+    },
+    {
+      "udi_record_id": "aada53fb-4e82-493e-8fa5-6316ebc9841d",
+      "udi_public_version": "1",
+      "udi_public_version_date": "2024-05-06",
+      "brand_name": "Medline Industries, Inc.",
+      "model_number": "CDS983481I",
+      "primary_identifiers": [
+        {
+          "id": "10198459000355",
+          "issuing_agency": "GS1"
+        }
+      ],
+      "single_use": "true",
+      "sterile": "false",
+      "product_code": "OEZ",
+      "classification": {
+        "product_code": "OEZ",
+        "device_name": "Cardiovascular Procedure Kit",
+        "device_class": "2",
+        "regulation_number": "870.1200",
+        "medical_specialty_description": "Cardiovascular"
+      },
+      "source_references": {
+        "udi": {
+          "url": "https://api.fda.gov/device/udi.json?search=device_description%3Acardiac&limit=2",
+          "retrieved_at": "2026-11-05T02:54:22.307439+00:00",
+          "last_updated": "2026-10-01",
+          "response_sha256": "6ce7a06684003871ce9f5ef9b313e16eeb18d0ac6aba64b8f9598354bd0cbf5f",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        },
+        "classification": {
+          "url": "https://api.fda.gov/device/classification.json?search=product_code%3AOEZ&limit=2",
+          "retrieved_at": "2026-11-05T02:54:25.391585+00:00",
+          "last_updated": "2026-10-26",
+          "response_sha256": "863c0248fc1dae2178dd1e61107142626eefbc852864c1f755c3f05e70501dfc",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        }
+      },
+      "join_status": "matched_category",
+      "reference_conflicts": [],
+      "permitted_use": "Research reference only; not approved labeling evidence or clinical advice"
+    },
+    {
+      "udi_record_id": "1b312b15-8cfd-45f4-b897-d74c7c954f77",
+      "udi_public_version": "1",
+      "udi_public_version_date": "2021-04-08",
+      "brand_name": "HarmonyAIR",
+      "model_number": "Monitor Carrier",
+      "primary_identifiers": [
+        {
+          "id": "00724995153618",
+          "issuing_agency": "GS1"
+        }
+      ],
+      "single_use": "false",
+      "sterile": "false",
+      "product_code": "FQO",
+      "classification": {
+        "product_code": "FQO",
+        "device_name": "Table, Operating-Room, Ac-Powered",
+        "device_class": "1",
+        "regulation_number": "878.4960",
+        "medical_specialty_description": "General, Plastic Surgery"
+      },
+      "source_references": {
+        "udi": {
+          "url": "https://api.fda.gov/device/udi.json?search=device_description%3Amonitor&limit=2",
+          "retrieved_at": "2026-11-05T02:54:22.661271+00:00",
+          "last_updated": "2026-10-01",
+          "response_sha256": "0c8083cf863438699d1bd448a55919baeaa31d9f548c598ce20013c5e85cf556",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        },
+        "classification": {
+          "url": "https://api.fda.gov/device/classification.json?search=product_code%3AFQO&limit=2",
+          "retrieved_at": "2026-11-05T02:54:23.661399+00:00",
+          "last_updated": "2026-10-26",
+          "response_sha256": "b5ac2ff745fc4eff710b6da47e97422227d77e257d4a506cd3282833b9e70a38",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        }
+      },
+      "join_status": "matched_category",
+      "reference_conflicts": [],
+      "permitted_use": "Research reference only; not approved labeling evidence or clinical advice"
+    },
+    {
+      "udi_record_id": "57e26c07-50cb-432b-9003-13b3bdb43a4d",
+      "udi_public_version": "5",
+      "udi_public_version_date": "2024-05-03",
+      "brand_name": "RadiForce\u00ae",
+      "model_number": "GS220",
+      "primary_identifiers": [
+        {
+          "id": "04995047020561",
+          "issuing_agency": "GS1"
+        }
+      ],
+      "single_use": "false",
+      "sterile": "false",
+      "product_code": "LLZ",
+      "classification": {
+        "product_code": "LLZ",
+        "device_name": "System, Image Processing, Radiological",
+        "device_class": "2",
+        "regulation_number": "892.2050",
+        "medical_specialty_description": "Radiology"
+      },
+      "source_references": {
+        "udi": {
+          "url": "https://api.fda.gov/device/udi.json?search=device_description%3Amonitor&limit=2",
+          "retrieved_at": "2026-11-05T02:54:22.661271+00:00",
+          "last_updated": "2026-10-01",
+          "response_sha256": "0c8083cf863438699d1bd448a55919baeaa31d9f548c598ce20013c5e85cf556",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        },
+        "classification": {
+          "url": "https://api.fda.gov/device/classification.json?search=product_code%3ALLZ&limit=2",
+          "retrieved_at": "2026-11-05T02:54:24.868830+00:00",
+          "last_updated": "2026-10-26",
+          "response_sha256": "14729e1ac4310c32c1b42f74d4f277210a958db86c590418bdb56ec47a9c2ca8",
+          "license_url": "https://open.fda.gov/license/",
+          "terms_url": "https://open.fda.gov/terms/"
+        }
+      },
+      "join_status": "matched_category",
+      "reference_conflicts": [],
+      "permitted_use": "Research reference only; not approved labeling evidence or clinical advice"
+    }
+  ],
+  "summary": {
+    "joined_rows": 8,
+    "unique_devices": 6,
+    "matched": 8,
+    "unmatched": 0,
+    "ambiguous": 0,
+    "conflicting": 0,
+    "skipped_without_identity": 0
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "url": "https://api.fda.gov/device/udi.json?search=device_description%3Ainfusion&limit=2",
+      "retrieved_at": "2026-11-05T02:54:21.711375+00:00",
+      "last_updated": "2026-10-01",
+      "response_sha256": "360edc4f642560121c26d25ef7d6593fa37eba59eb793d6b708669d71db7fa50",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/udi.json?search=device_description%3Acardiac&limit=2",
+      "retrieved_at": "2026-11-05T02:54:22.307439+00:00",
+      "last_updated": "2026-10-01",
+      "response_sha256": "6ce7a06684003871ce9f5ef9b313e16eeb18d0ac6aba64b8f9598354bd0cbf5f",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/udi.json?search=device_description%3Amonitor&limit=2",
+      "retrieved_at": "2026-11-05T02:54:22.661271+00:00",
+      "last_updated": "2026-10-01",
+      "response_sha256": "0c8083cf863438699d1bd448a55919baeaa31d9f548c598ce20013c5e85cf556",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/classification.json?search=product_code%3AFPA&limit=2",
+      "retrieved_at": "2026-11-05T02:54:23.161194+00:00",
+      "last_updated": "2026-10-26",
+      "response_sha256": "af4c59ae0edb5456c9eeb6bfbb45c1632212075406511fc61b524be2acc00b56",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/classification.json?search=product_code%3AFQO&limit=2",
+      "retrieved_at": "2026-11-05T02:54:23.661399+00:00",
+      "last_updated": "2026-10-26",
+      "response_sha256": "b5ac2ff745fc4eff710b6da47e97422227d77e257d4a506cd3282833b9e70a38",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/classification.json?search=product_code%3AFRN&limit=2",
+      "retrieved_at": "2026-11-05T02:54:24.207631+00:00",
+      "last_updated": "2026-10-26",
+      "response_sha256": "89ca33aab932006bc7a6a7dc6d95cd51706c32051add08bf7978af7cae6ef84c",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/classification.json?search=product_code%3AHQC&limit=2",
+      "retrieved_at": "2026-11-05T02:54:24.575983+00:00",
+      "last_updated": "2026-10-26",
+      "response_sha256": "5c9babcb404a2e8ba43848e118016f246c705732e1d111b41209b719ad59b336",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/classification.json?search=product_code%3ALLZ&limit=2",
+      "retrieved_at": "2026-11-05T02:54:24.868830+00:00",
+      "last_updated": "2026-10-26",
+      "response_sha256": "14729e1ac4310c32c1b42f74d4f277210a958db86c590418bdb56ec47a9c2ca8",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/classification.json?search=product_code%3ALRP&limit=2",
+      "retrieved_at": "2026-11-05T02:54:25.057000+00:00",
+      "last_updated": "2026-10-26",
+      "response_sha256": "2b9b6ca7ccaf527f6148824cfe274498fca8385df4666f80e4f8544ef8d7352a",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/classification.json?search=product_code%3AOEZ&limit=2",
+      "retrieved_at": "2026-11-05T02:54:25.391585+00:00",
+      "last_updated": "2026-10-26",
+      "response_sha256": "863c0248fc1dae2178dd1e61107142626eefbc852864c1f755c3f05e70501dfc",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    },
+    {
+      "url": "https://api.fda.gov/device/classification.json?search=product_code%3APKP&limit=2",
+      "retrieved_at": "2026-11-05T02:54:25.584668+00:00",
+      "last_updated": "2026-10-26",
+      "response_sha256": "b31306792dd17dfed948823a6230f8759090c1b9df55084967fbe9309dc495bd",
+      "license_url": "https://open.fda.gov/license/",
+      "terms_url": "https://open.fda.gov/terms/"
+    }
+  ],
+  "scope": "Read-only public reference sample. All application demonstrations and mutation cases remain synthetic.",
+  "join_key": "UDI product_codes[].code == classification.product_code; category join only",
+  "excluded_fields": [
+    "customer_contacts",
+    "company_name",
+    "gmdn_terms",
+    "device_description",
+    "free-text narratives",
+    "approved warnings"
+  ],
+  "data_rights": "openFDA CC0 except third-party exclusions. GMDN content is excluded; no endorsement implied."
+}

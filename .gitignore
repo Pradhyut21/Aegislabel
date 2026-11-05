@@ -22,3 +22,5 @@ artifacts/*
 *.p12
 coverage/
 frontend/coverage/
+
+.venv*/

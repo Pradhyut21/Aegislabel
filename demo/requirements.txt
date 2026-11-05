@@ -1,0 +1,3 @@
+# Optional local speech tooling. No paid API or voice cloning.
+kokoro-onnx==0.6.1
+soundfile==0.14.0

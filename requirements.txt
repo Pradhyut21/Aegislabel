@@ -11,3 +11,4 @@ PyMuPDF==1.25.5
 reportlab==4.4.0
 httpx==0.28.1
 pytest==9.0.3
+llama-api-client==0.6.0

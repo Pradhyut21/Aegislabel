@@ -560,6 +560,8 @@ def create_draft(body: DraftInput, u=Depends(user)):
                 mode=proposal["mode"],
                 provider_error=proposal["provider_error"],
                 usage=proposal["usage"],
+                provider=proposal.get("provider"),
+                model=proposal.get("model"),
                 created_at=now(),
                 validation=None,
             ),
