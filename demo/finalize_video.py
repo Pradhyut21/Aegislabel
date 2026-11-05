@@ -28,7 +28,7 @@ measurement = run(
         "-",
     ]
 ).stderr
-loudness = json.loads(measurement[measurement.rfind("{") :])
+loudness = json.loads(measurement[measurement.rfind("{") : measurement.rfind("}") + 1])
 (OUT / "loudness-before.json").write_text(json.dumps(loudness, indent=2))
 filter_value = (
     "loudnorm=I=-16:TP=-1:LRA=11:linear=true:"
