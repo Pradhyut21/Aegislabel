@@ -1,0 +1,5 @@
+# Local integration-test override only. No external database exposure.
+services:
+  db:
+    ports:
+      - "127.0.0.1:15432:5432"

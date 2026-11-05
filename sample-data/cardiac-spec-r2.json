@@ -1,0 +1,17 @@
+{
+  "name": "Sterile Cardiac Procedure Kit",
+  "identifier": "CK-240",
+  "variant": "Standard",
+  "udi": "09506000134305",
+  "barcode": "09506000134305",
+  "warning": "Do not reuse. Inspect packaging before use.",
+  "ifu": "IFU-CK-240 / R1",
+  "packaging": "Unit pouch",
+  "symbols": "Single use; Consult IFU",
+  "claims": "Approved intended use only",
+  "language": "en",
+  "translation": "Do not reuse. Inspect packaging before use.",
+  "manufacturer": "Aegis Synthetic Devices Ltd.",
+  "sterilization": "Sterile",
+  "market": "EU"
+}
