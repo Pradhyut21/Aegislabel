@@ -22,7 +22,7 @@ measurement = run(
         "-i",
         str(video),
         "-af",
-        "loudnorm=I=-16:TP=-1:LRA=11:print_format=json",
+        "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json",
         "-f",
         "null",
         "-",
@@ -31,7 +31,7 @@ measurement = run(
 loudness = json.loads(measurement[measurement.rfind("{") : measurement.rfind("}") + 1])
 (OUT / "loudness-before.json").write_text(json.dumps(loudness, indent=2))
 filter_value = (
-    "loudnorm=I=-16:TP=-1:LRA=11:linear=true:"
+    "loudnorm=I=-16:TP=-1.5:LRA=11:linear=true:"
     f"measured_I={loudness['input_i']}:measured_TP={loudness['input_tp']}:"
     f"measured_LRA={loudness['input_lra']}:measured_thresh={loudness['input_thresh']}:"
     f"offset={loudness['target_offset']}:print_format=json"

@@ -96,3 +96,5 @@ An initial browser-suite attempt failed because no server was listening on its c
 Browser rerun on the fresh isolated server: **2 passed in 28.5 seconds**, including the complete warning failure/recovery/release journey and automated accessibility/mobile checks.
 
 Remote verification for `636a596726b5bdee59a406a9d5a30ff04c9d9f46`: [Quality 41959470473](https://github.com/Pradhyut21/Aegislabel/actions/runs/41959470473) **passed**, including SQLite/PostgreSQL backend tests, frontend checks, browser/accessibility tests, Docker smoke and the new demo-tooling install/audit. [CodeQL 41959470336](https://github.com/Pradhyut21/Aegislabel/actions/runs/41959470336) **passed** Python and JavaScript/TypeScript analysis.
+
+The complete Hyperframes export rendered **4,232 frames**, 1920×1080 at 30 fps, in 7m 1s using software screenshot capture. The delivered MP4 includes H.264 video and AAC audio with a measured duration of **141.1 seconds**. Full FFmpeg decode reported no errors. The poster is extracted from the actual first frame. The finalizer reserves 1.5 dB of true-peak headroom before AAC encoding; final measured loudness and hashes accompany the demo release.

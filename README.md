@@ -183,6 +183,14 @@ For the exact verified Python dependency set, install `requirements.lock.txt` in
 
 See [contribution guidance](CONTRIBUTING.md) and [security reporting](SECURITY.md). The code and synthetic fixtures are published for technical review; regulatory conformance and production suitability are not implied.
 
+## Watch the working demo
+
+[![Watch AegisLabel-FX: real workflow demo](docs/media/demo-poster.jpg)](https://github.com/Pradhyut21/Aegislabel/releases/tag/demo-v1.0.0)
+
+**[Watch/download the 1080p narrated demo](https://github.com/Pradhyut21/Aegislabel/releases/download/demo-v1.0.0/AegisLabel-FX-demo.mp4)** · [Transcript](demo/transcript.vtt) · [Demo assets and hash manifest](https://github.com/Pradhyut21/Aegislabel/releases/tag/demo-v1.0.0)
+
+2:21 of real application footage: missed-warning block → correction → independent reviewer role → release ZIP → executed fault injection. Voice is disclosed AI narration. The captured run uses deterministic mode; reviewer actions are a scripted prototype demonstration.
+
 ## Recorded demo, Meta integration and public reference data
 
 - [Narrated real-app demo and reproducible capture/render commands](demo/README.md): BRAG-guided, locally synthesized voice, actual validation and approval screens.
