@@ -6,6 +6,8 @@ from pathlib import Path
 
 PATTERNS = {
     "GitHub credential": re.compile(rb"\bgh[pousr]_[A-Za-z0-9]{30,}\b"),
+    "Fine-grained GitHub credential": re.compile(rb"\bgithub_pat_[A-Za-z0-9_]{30,}\b"),
+    "Provider secret": re.compile(rb"\bsk-(?:proj-)?[A-Za-z0-9_-]{24,}\b"),
     "AWS access identifier": re.compile(rb"\bAKIA[A-Z0-9]{16}\b"),
     "Private key": re.compile(rb"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
 }

@@ -71,6 +71,8 @@ The [verification report](docs/VERIFICATION.md) records executed commands and en
 Python 3.12 and Node 22+ are recommended. Run from the project root:
 
 ```bash
+git clone https://github.com/Pradhyut21/AegisLabel-FX.git
+cd AegisLabel-FX
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
