@@ -80,7 +80,7 @@ jobs:
         run: |
           uvicorn backend.main:app --host 127.0.0.1 --port 8000 --workers 1 > artifacts/server.log 2>&1 &
           trap 'kill $!' EXIT
-          curl --retry 15 --retry-connrefused --retry-delay 1 --fail http://127.0.0.1:8000/api/v1/health
+          curl --retry 15 --retry-all-errors --retry-delay 1 --connect-timeout 3 --max-time 5 --fail http://127.0.0.1:8000/api/v1/health
           cd frontend
           npm run test:e2e
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -98,4 +98,4 @@ jobs:
         run: |
           docker run -d --name aegis-ci -p 127.0.0.1:8000:8000 aegislabel-fx:ci
           trap 'docker logs aegis-ci; docker rm -f aegis-ci' EXIT
-          curl --retry 20 --retry-connrefused --retry-delay 2 --fail http://127.0.0.1:8000/api/v1/health
+          curl --retry 20 --retry-all-errors --retry-delay 2 --connect-timeout 3 --max-time 5 --fail http://127.0.0.1:8000/api/v1/health
