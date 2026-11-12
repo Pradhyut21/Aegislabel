@@ -6,7 +6,7 @@
   "description": "Optional BRAG-guided real-app demo capture and Hyperframes rendering tools",
   "dependencies": {
     "@playwright/test": "1.64.1",
-    "gsap": "3.15.0",
+    "gsap": "3.15.1",
     "hyperframes": "0.9.14"
   },
   "overrides": {
